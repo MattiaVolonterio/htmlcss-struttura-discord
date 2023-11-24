@@ -161,8 +161,6 @@ section:nth-child(even) {
 
 /* FOOTER */
 
-/* FOOTER MAIN */
-
 .footer-main,
 .footer {
   background-color: #23272a;
@@ -187,7 +185,7 @@ section:nth-child(even) {
   display: flex;
 
   /* DEBUG */
-  min-height: 500px;
+  min-height: 700px;
 }
 
 .footer-main-left {
