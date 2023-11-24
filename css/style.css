@@ -56,15 +56,10 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
-  padding: var(--padding);
 }
 
 .nav-logo > img {
   width: 150px;
-}
-
-.nav-link {
-  padding: var(--padding);
 }
 
 .link-list {
@@ -77,14 +72,19 @@ body {
   font-size: 1.3rem;
 }
 
+.link-list > li > a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav-login {
-  padding-right: var(--padding);
   text-align: right;
+  cursor: pointer;
 }
 
 .nav-login > span {
   background-color: #ffffff;
-  padding: var(--padding);
+  padding: 15px;
   border-radius: 20px;
 }
 
