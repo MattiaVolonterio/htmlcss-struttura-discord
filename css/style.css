@@ -1,9 +1,11 @@
 :root {
   --padding: 10px;
-  --padding-section: 50px;
+  --padding-section: 100px;
   --dashed-border: 2px dashed black;
   --dashed-border-white: 2px dashed white;
   --section-border: 4px dashed black;
+  --title-font-size: 48px;
+  --paragraph-font-size: 20px;
 }
 
 /* RESET */
@@ -93,7 +95,7 @@ header {
   gap: 40px;
   flex-wrap: wrap;
   color: white;
-  font-size: 1.3rem;
+  font-size: 21px;
 }
 
 .nav-login {
@@ -117,7 +119,7 @@ header {
 }
 
 .header-title {
-  font-size: 48px;
+  font-size: var(--title-font-size);
   padding-bottom: 50px;
 }
 
@@ -153,11 +155,13 @@ section:nth-child(even) {
 
 .section-small {
   display: flex;
+  align-items: center;
   padding: var(--padding-section) 0;
 }
 
 .section-image {
   min-width: 60%;
+  padding-right: 30px;
 
   /* DEBUG */
   background-color: #1c90ff;
@@ -165,8 +169,20 @@ section:nth-child(even) {
   min-height: 500px;
 }
 
+.section-title {
+  font-size: var(--title-font-size);
+  padding-bottom: 20px;
+}
+
+.section-content {
+  font-size: var(--paragraph-font-size);
+  font-weight: 500;
+  line-height: 30px;
+}
+
 .section-text {
   width: 40%;
+  padding: 0 50px;
 
   /* DEBUG */
   background-color: #fec0ca;
