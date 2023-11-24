@@ -1,5 +1,6 @@
 :root {
   --padding: 10px;
+  --dashed-border: 2px dashed black;
 }
 
 /* RESET */
@@ -43,7 +44,7 @@ ul {
   /* DEBUG */
   min-height: 35px;
   background-color: #daa520;
-  border: 2px dashed black;
+  border: var(--dashed-border);
 }
 
 .nav-logo {
@@ -51,7 +52,7 @@ ul {
   padding: var(--padding);
 
   /* DEBUG */
-  border: 1px dashed black;
+  border: var(--dashed-border);
 }
 
 .nav-link {
@@ -59,7 +60,7 @@ ul {
   padding: var(--padding);
 
   /* DEBUG */
-  border: 1px dashed black;
+  border: var(--dashed-border);
 }
 
 .link-list {
@@ -75,10 +76,10 @@ ul {
 .nav-login {
   width: 20%;
   padding: var(--padding);
+  text-align: right;
 
   /* DEBUG */
-  border: 1px dashed black;
-  text-align: right;
+  border: var(--dashed-border);
 }
 
 /* HEADER MAIN */
@@ -88,4 +89,23 @@ ul {
 
   /* DEBUG */
   min-height: 100px;
+}
+
+.header-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* DEBUG */
+  min-height: 400px;
+}
+
+.header-content {
+  margin: 5% 0;
+
+  /* DEBUG */
+  min-width: 70%;
+  min-height: 400px;
+  background-color: #ee81ee;
+  border: var(--dashed-border);
 }
