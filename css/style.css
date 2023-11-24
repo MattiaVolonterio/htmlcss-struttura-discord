@@ -2,6 +2,7 @@
   --padding: 10px;
   --padding-section: 50px;
   --dashed-border: 2px dashed black;
+  --dashed-border-white: 2px dashed white;
   --section-border: 4px dashed black;
 }
 
@@ -162,4 +163,43 @@ section:nth-child(even) {
   min-height: 1000px;
   background-color: #228b21;
   border: var(--section-border);
+}
+
+/* FOOTER */
+
+/* FOOTER MAIN */
+
+.footer-main {
+  background-color: #23272a;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--padding);
+  padding-bottom: 50px;
+  border-bottom: 4px solid white;
+
+  /* DEBUG */
+  /* min-height: 600px; */
+}
+
+.footer-main-container {
+  display: flex;
+
+  /* DEBUG */
+  min-height: 500px;
+}
+
+.footer-main-left {
+  flex: 0 0 30%;
+
+  /* DEBUG */
+  background-color: #ef8080;
+  border: var(--dashed-border);
+}
+
+.footer-main-section {
+  width: calc(100% - 30%);
+
+  /* DEBUG */
+  background-color: #20b1a9;
+  border: var(--dashed-border-white);
 }
