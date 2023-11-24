@@ -1,6 +1,8 @@
 :root {
   --padding: 10px;
+  --padding-section: 50px;
   --dashed-border: 2px dashed black;
+  --section-border: 4px dashed black;
 }
 
 /* RESET */
@@ -21,6 +23,12 @@
 ul {
   list-style: none;
   text-decoration: none;
+}
+
+/* DEBUG */
+
+body {
+  padding-bottom: 100px;
 }
 
 /* HEADER */
@@ -44,7 +52,6 @@ ul {
   /* DEBUG */
   min-height: 35px;
   background-color: #daa520;
-  border: var(--dashed-border);
 }
 
 .nav-logo {
@@ -67,6 +74,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .link-list > li {
@@ -108,4 +116,50 @@ ul {
   min-height: 400px;
   background-color: #ee81ee;
   border: var(--dashed-border);
+}
+
+/* MAIN */
+
+/* SECTION */
+
+section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.section-small {
+  display: flex;
+  padding: var(--padding-section) 0;
+}
+
+.section-image {
+  min-width: 60%;
+
+  /* DEBUG */
+  background-color: #1c90ff;
+  border: var(--section-border);
+  min-height: 500px;
+}
+
+.section-text {
+  width: 40%;
+
+  /* DEBUG */
+  background-color: #fec0ca;
+  border: var(--section-border);
+  min-height: 500px;
+}
+
+.section-big {
+  display: flex;
+  align-items: center;
+  padding: var(--padding-section) 0;
+}
+
+.section-big-content {
+  width: 100%;
+
+  /* DEBUG */
+  min-height: 1000px;
+  background-color: #228b21;
+  border: var(--section-border);
 }
