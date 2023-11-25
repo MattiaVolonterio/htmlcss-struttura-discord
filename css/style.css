@@ -52,6 +52,18 @@ body {
   cursor: pointer;
 }
 
+.btn-lilla {
+  width: 20%;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-radius: 30px;
+  background-color: #8ea0e1;
+  color: #ffffff;
+  font-size: var(--paragraph-font-size);
+  text-align: center;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -148,9 +160,10 @@ header {
 /* MAIN */
 
 /* SECTION */
+/* Sistemare allineamento testi e immagini */
 
 section:nth-child(even) {
-  background-color: #d3d3d3;
+  background-color: #f6f6f6;
 }
 
 .section-small {
@@ -164,9 +177,9 @@ section:nth-child(even) {
   padding-right: 30px;
 
   /* DEBUG */
-  background-color: #1c90ff;
+  /* background-color: #1c90ff;
   border: var(--section-border);
-  min-height: 500px;
+  min-height: 500px; */
 }
 
 .section-title {
@@ -185,24 +198,42 @@ section:nth-child(even) {
   padding: 0 50px;
 
   /* DEBUG */
-  background-color: #fec0ca;
+  /* background-color: #fec0ca;
   border: var(--section-border);
-  min-height: 500px;
+  min-height: 500px; */
 }
 
 .section-big {
   display: flex;
   align-items: center;
-  padding: var(--padding-section) 0;
+  padding: 100px 0 150px 0;
 }
 
 .section-big-content {
   width: 100%;
 
   /* DEBUG */
-  min-height: 1000px;
+  /* min-height: 1000px;
   background-color: #228b21;
-  border: var(--section-border);
+  border: var(--section-border); */
+}
+
+.section-text-big {
+  text-align: center;
+}
+
+.section-text-big > .section-content {
+  padding: 0 90px;
+}
+
+.big-content-download > h3 {
+  text-align: center;
+  line-height: 100px;
+  font-size: 28px;
+  background-image: url(../img/stars.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0;
 }
 
 /* FOOTER */
