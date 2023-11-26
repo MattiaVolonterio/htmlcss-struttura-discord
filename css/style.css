@@ -91,7 +91,8 @@ header {
   align-items: center;
 }
 
-.nav-logo {
+.nav-logo,
+.footer-logo {
   display: flex;
   align-items: center;
 }
@@ -162,7 +163,7 @@ header {
 /* SECTION */
 /* Sistemare allineamento testi e immagini */
 
-section:nth-child(even) {
+section:nth-of-type(even) {
   background-color: #f6f6f6;
 }
 
@@ -334,9 +335,9 @@ section:nth-child(even) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding-bottom: 50px;
   /* DEBUG */
-  background-color: #7fffd3;
+  /* background-color: #7fffd3; */
 }
 
 .footer-logo,
@@ -344,6 +345,12 @@ section:nth-child(even) {
   padding: var(--padding);
 
   /* DEBUG */
-  background-color: #ffb6c1;
-  border: var(--dashed-border);
+  /* background-color: #ffb6c1;
+  border: var(--dashed-border); */
+}
+
+.footer-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #8ea0e1;
 }
